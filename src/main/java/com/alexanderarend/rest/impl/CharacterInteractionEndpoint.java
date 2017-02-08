@@ -45,15 +45,6 @@ public class CharacterInteractionEndpoint {
 	}
 	
 	
-	
-	/**
-	 * Checks whether the records have been processed, if they have they are transformed into
-	 * csv and returned to the user
-	 * @param id of the requested job
-	 * @param timeOutTime timeout time of request
-	 * @return Csv of the validated records
-	 * @throws InterruptedException 
-	 */
 	@RequestMapping( value = "/select", method = RequestMethod.GET, produces = "application/json")
 	public ResponseEntity<CharSelectResponse>  getStatus(@RequestParam final String userId, @RequestParam final String charId, @RequestParam final String charType ) {
 	

@@ -1,8 +1,10 @@
 package com.alexanderarend.character.manage;
 
+import org.springframework.stereotype.Component;
+
 import com.alexanderarend.dto.PlayerRequest;
 import com.alexanderarend.dto.PlayerResponse;
-
+@Component
 public class ManageCharacterImpl implements ManageCharacter {
 
 	public PlayerResponse manageCharacterInteraction(final PlayerRequest playerRequest,

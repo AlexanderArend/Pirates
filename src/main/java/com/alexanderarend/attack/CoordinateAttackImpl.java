@@ -2,6 +2,8 @@ package com.alexanderarend.attack;
 
 import java.util.Map.Entry;
 
+import org.springframework.stereotype.Component;
+
 import com.alexanderarend.coords.Coordinates;
 import com.alexanderarend.coords.MoveCoords;
 import com.alexanderarend.domain.OtherUsersCoords;
@@ -9,7 +11,7 @@ import com.alexanderarend.dto.AttackRequest;
 import com.alexanderarend.dto.AttackResponse;
 import com.alexanderarend.parse.ParseCoords;
 
-
+@Component
 public class CoordinateAttackImpl implements CoordinateAttack{
 	private String userIdHit;
 
@@ -66,7 +68,7 @@ public class CoordinateAttackImpl implements CoordinateAttack{
 	}
 
 	public int calculateRangeRemaining(final int movementType,final int range) {
-		return movementType - range;
+		return range - movementType ;
 	}
 
 

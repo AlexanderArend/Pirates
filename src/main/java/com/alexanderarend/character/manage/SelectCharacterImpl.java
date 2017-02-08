@@ -1,11 +1,15 @@
 package com.alexanderarend.character.manage;
 
+import org.springframework.stereotype.Component;
+
 import com.alexanderarend.characters.Dragon;
 import com.alexanderarend.characters.Gunman;
 import com.alexanderarend.characters.Hydra;
 import com.alexanderarend.domain.OtherUsersCoords;
 import com.alexanderarend.dto.CharSelectResponse;
 
+
+@Component
 public class SelectCharacterImpl implements SelectCharacter {
 
 	private static final String FIRST_PERSON_COORDS = "0,500";
